@@ -295,6 +295,16 @@
     }
   }
 
+  .dragArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    -webkit-app-region: drag; // 支持拖动
+    z-index: 1000;
+  }
+
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

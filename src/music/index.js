@@ -321,6 +321,7 @@ const Music = () => {
 
   return (
     <div className={styles.MusicGallery}>
+      <div className={styles.dragArea} />
       {showPlaylist && (
         <div className={styles.playlistOverlay} onClick={() => setShowPlaylist(false)}>
           <div className={styles.playlistContainer} onClick={e => e.stopPropagation()}>

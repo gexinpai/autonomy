@@ -211,9 +211,9 @@ const FileList = ({
 
   const onItemClick = (isLeaf, id, path, isLoaded, type) => {
     // 快速判断设置节点
-    if (type === 'setting') {
-      ipcRenderer.send('open-new-window', 'setting');
-      console.log('open setting');
+    if (type === 'setting'||type === 'music') {
+      ipcRenderer.send('open-new-window', type);
+      console.log('open ' + type);
       return;
     }
     

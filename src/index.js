@@ -4,6 +4,7 @@ import 'antd/dist/antd.css';
 import './index.css';
 import App from './App';
 import Setting from './setting';
+import Music from './music';
 import Crash from './crash';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'; // 只能用hash路由
@@ -34,6 +35,9 @@ ReactDOM.render(
       </Route>
       <Route path="/setting">
         <Setting />
+      </Route>
+      <Route path="/music">
+        <Music />
       </Route>
       <Route path="/splash">
         <Splash />
